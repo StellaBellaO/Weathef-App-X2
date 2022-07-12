@@ -51,8 +51,8 @@ body {
     top: -34px;
   }
   
-  .search-form {
-    margin-bottom: 20px;
+  form {
+    margin-bottom: 30px;
   }
 
   .heading {
@@ -78,4 +78,8 @@ body {
 
 .date {
  margin-bottom: 20px;
+}
+
+.description {
+  margin-left: 100px;
 }
