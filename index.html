@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form" id="search-form">
+        <form id="search-form">
           <div class="row">
             <div class="col-9">
               <input
@@ -24,7 +24,7 @@
                 placeholder="Enter a town or city.."
                 autofocus="on"
                 autocomplete="off"
-                id="city-input"
+                id="find-input"
                 class="form-control shadow-sm"
               />
             </div>
@@ -32,22 +32,29 @@
               <input
                 type="submit"
                 value="Search"
+                id="search-location"
                 class="form-control btn btn-primary shadow-sm"
               />
             </div>
           </div>
         </form>
+        <div class="city">
         <h1 id="city">Lagos, Nigeria</h1>
+      </div>
+        <div class="date">
         <ul>
-          <li id="date">Last updated:</li>
-          <li>Partly Cloudy</li>
+          <li >Last updated: <span id="time"></span></li>
         </ul>
+      </div>
+      <ul>
+        <li id="weather">Partly Cloudy</li>
+      </ul>
         <div class="row">
           <div class="col-6">
             <div class="clearfix">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy icon"
+                alt="Cloudy"
                 class="weather-icon float-left"
               />
               <div class="float-left">
@@ -56,15 +63,17 @@
                   <a href="#" id="celsius-link"> °C </a> |
                   <a href="#" id="fahrenheit-link"> °F </a></span
                 >
+              
               </div>
             </div>
           </div>
           <div class="col-6">
+            <div class="description">
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 77%</li>
-              <li>Wind: 8 km/h</li>
+              <li>Humidity: <span class="humidity"> % </span></li>
+              <li>Wind: <span class="humidity"> m/h </span></li>
             </ul>
+          </div>
           </div>
         </div>
       </div>

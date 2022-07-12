@@ -43,6 +43,7 @@ body {
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
+    padding-top: 20px;
   }
   
   .units {
@@ -57,3 +58,24 @@ body {
   .heading {
       text-align: center;
   }
+
+  .city {
+    padding-bottom: 20px;
+  }
+  
+  .icon {
+    padding-top: 20px;
+  }
+
+  .weather-wrapper {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+ .box-search {
+   margin-top: 50px;
+ }
+
+.date {
+ margin-bottom: 20px;
+}
