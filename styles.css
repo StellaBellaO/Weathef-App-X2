@@ -1,7 +1,8 @@
 body {
     font-family: arial, sans-serif;
-  }
-  
+  background-image: url("https://images.pexels.com/photos/586687/pexels-photo-586687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
   h1 {
     color: #7c7c7c;
     font-size: 24px;
@@ -26,10 +27,13 @@ body {
   
   .weather-app {
     border: 1px solid #dadde1;
-    padding: 15px;
+    padding: 50px;
     margin: 20px auto;
     border-radius: 10px;
     max-width: 600px;
+    opacity: 0.9;
+    background-color: #FDF4E3;
+    margin-top: 200px;
   }
   
   .weather-icon {
@@ -59,10 +63,13 @@ body {
 
   .heading {
       text-align: center;
+      color: white;
+      font-size: 10px;
   }
 
   .city {
     padding-bottom: 20px;
+    padding-top: 20px;
   }
   
   .icon {
@@ -96,10 +103,15 @@ h2 {
 }
 
 .weather {
-  font-size: 30px;
+  font-size: 20px;
   text-transform: capitalize;
 }
 
 .weather-forecast {
   color: #7c7c7c;
+}
+
+p a {
+  text-decoration: none;
+  color: white;
 }

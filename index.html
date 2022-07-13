@@ -17,6 +17,7 @@
     <title>Responsive Weather App</title>
   </head>
   <body>
+    <div class="outer-body">
     <div class="container">
       <div class="weather-app">
         <form id="search-form">
@@ -41,14 +42,15 @@
             </div>
           </div>
         </form>
-        <div class="city">
-        <h1 id="city">Lagos, Nigeria</h1>
-      </div>
         <div class="date">
-        <ul>
-          <li >Last updated: <span id="time"></span></li>
-        </ul>
+          <ul>
+            <li >Last updated: <br> <span id="time"></span></li>
+          </ul>
+        </div>
+        <div class="city">
+       <h1 id="city" class="fw-bold">Lagos, Nigeria</h1> 
       </div>
+        
       <ul>
         <li id="weather" class="weather">Partly Cloudy</li>
       </ul>
@@ -87,10 +89,11 @@
       </div>
       
     </div>
-
+  
     <div class="heading">
       <p><a href="">Open-source code</a> by Stella-Maris Ojideh</p>
     </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>

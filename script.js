@@ -57,7 +57,7 @@ function convertToFahrenheit(event) {
   
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", convertToCelsius);
-  
+
 ///// Show 6 day forecaste ////
 
 function displayForecast(reponse) {
@@ -146,4 +146,4 @@ function submit(event) {
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", submit);
   
-  search("New York");
+  search("San Francisco");
