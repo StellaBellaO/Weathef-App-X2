@@ -36,19 +36,21 @@ body {
     height: 64px;
     width: 64px;
     margin-right: 10px;
+
   }
   
   .temperature {
     color: rgb(33, 33, 33);
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 400;
     line-height: 1;
     padding-top: 20px;
+    margin-left: 20px;
   }
   
   .units {
     position: relative;
-    top: -34px;
+    
   }
   
   form {
@@ -82,4 +84,22 @@ body {
 
 .description {
   margin-left: 100px;
+}
+
+h2 {
+  padding-top: 40px;
+}
+
+.units a {
+  color: #7c7c7c;
+  text-decoration: none;
+}
+
+.weather {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.weather-forecast {
+  color: #7c7c7c;
 }

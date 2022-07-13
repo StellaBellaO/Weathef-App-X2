@@ -10,6 +10,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
     <link rel="stylesheet" href="styles.css" />
     <title>Responsive Weather App</title>
   </head>
@@ -47,15 +50,16 @@
         </ul>
       </div>
       <ul>
-        <li id="weather">Partly Cloudy</li>
+        <li id="weather" class="weather">Partly Cloudy</li>
       </ul>
         <div class="row">
           <div class="col-6">
             <div class="clearfix">
               <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Cloudy"
-                class="weather-icon float-left"
+                src=""
+                alt="Clear"
+                id="icon"
+                class="float-left"
               />
               <div class="float-left">
                 <span class="temperature" id="temperature"></span>
@@ -70,18 +74,20 @@
           <div class="col-6">
             <div class="description">
             <ul>
-              <li>Humidity: <span class="humidity"> % </span></li>
-              <li>Wind: <span class="humidity"> m/h </span></li>
+              <li>Humidity: <span id="humidity"> </span> % </li>
+              <li>Wind: <span id="wind"> </span> m/h </li>
             </ul>
           </div>
           </div>
         </div>
+        <H2>
+         <div class="weather-forecast" id="forecast"></div>
+        
+        </H2>
       </div>
+      
     </div>
-<H2>
-  <div class="weather-forecast" id="forecast"></div>
 
-</H2>
     <div class="heading">
       <p><a href="">Open-source code</a> by Stella-Maris Ojideh</p>
     </div>

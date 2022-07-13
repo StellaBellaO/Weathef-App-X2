@@ -31,6 +31,33 @@ return days[day];
 
 }
 
+/// convert c to f
+function convertToFahrenheit(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+  
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
+    let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  }
+  
+  function convertToCelsius(event) {
+    event.preventDefault();
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  }
+  
+  let celsiusTemperature = null;
+  
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  fahrenheitLink.addEventListener("click", convertToFahrenheit);
+  
+  let celsiusLink = document.querySelector("#celsius-link");
+  celsiusLink.addEventListener("click", convertToCelsius);
+  
 ///// Show 6 day forecaste ////
 
 function displayForecast(reponse) {
@@ -84,7 +111,6 @@ function displayTemperature(response) {
     let weatherElement = document.querySelector("#weather");
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
-    let timeElement = document.querySelector("#time");
     let iconElement = document.querySelector("#icon");
   
     celsiusTemperature = response.data.main.temp;
@@ -94,7 +120,6 @@ function displayTemperature(response) {
     weatherElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML = response.data.main.humidity;
     windElement.innerHTML = Math.round(response.data.wind.speed);
-    timeElement.innerHTML = (response.data.dt * 1000);
     iconElement.setAttribute(
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
